@@ -6,4 +6,4 @@
 
 ## Clone to your backlift account
 
-    https://www.backlift.com/backlift/dropbox/create?template=github.com/pbrumm/nss_backbone&appname=nssbackbone
+[clone to your backlift account](https://www.backlift.com/backlift/dropbox/create?template=github.com/pbrumm/nss_backbone&appname=nssbackbone)
