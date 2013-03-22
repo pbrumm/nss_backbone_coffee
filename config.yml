@@ -1,0 +1,61 @@
+compile:
+- /scripts/templates/*.jst
+
+# scripts: These javascript files will be packaged and linked
+# in order before any other .js files. File paths should be 
+# specified relative to the project root. They should not be 
+# compressed. 
+
+scripts:
+- /scripts/support/zepto.js
+- /scripts/support/underscore.js
+- /scripts/support/backbone.js
+#- /scripts/support/backbone-localstorage.js
+- /scripts/support/json2.js
+- /scripts/support/random.js
+- /scripts/support/underscore.js
+- /scripts/templates/*
+- /scripts/models/*
+- /scripts/collections/*
+- /scripts/views/*
+- /palettes.js
+
+
+styles:
+- /styles/style.css
+# add_remaining_scripts: (Yes or No) If Yes, all .js files in 
+# the project will be packaged and linked to the main html 
+# file. Files not included in the 'scripts' list will be 
+# loaded in arbitrary order.
+#
+# If No, only the files listed in the scripts list will 
+# be packaged and linked. Regardless, all script files will 
+# be uploaded. You would only set 'add_remaining_scripts' to
+# No if you were using a separate asset management library,
+# like require.js 
+
+add_remaining_scripts: No
+
+
+# styles: These stylesheets will be packaged and linked
+# in order before any other .css files, similar to scripts.
+
+# styles:
+# - styles/bootstrap.css
+# - styles/bootstrap-responsive.css
+
+
+# add_remaining_styles: (Yes or No) If Yes, all remaining 
+# .css files in the project will be packaged and linked 
+# into the app. If No, only the files listed in the 'styles' 
+# list will be linked.
+
+add_remaining_styles: No
+
+
+# autoroute: the automatic routing feature is useful for single-page 
+# websites that implement their own javascript routing. If autoroute
+# is set to 'yes', all requests to URLs that don't match a file or API 
+# endpoint will be routed to the index.html file. Default is 'no'.
+
+autoroute: yes
